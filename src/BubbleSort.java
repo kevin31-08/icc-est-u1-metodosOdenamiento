@@ -45,4 +45,12 @@ public class BubbleSort {
         System.out.println();
     }
     //
+    public void sort(int[] numeros, boolean asc){
+        if (asc) {
+            sortAscendente(numeros);
+        }else{
+            sortDscendente(numeros);
+        }
+
+    }
 }
