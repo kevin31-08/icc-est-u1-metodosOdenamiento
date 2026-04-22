@@ -1,8 +1,8 @@
 public class BubbleSort {
     public BubbleSort(){
-        System.out.println("se creo en la clase constructor ");
+    System.out.println("se creo en la clase constructor ");}
         // constructor 
-        public void sortAscendente(int numeros[]) {
+        public void sortAscendente(int[] numeros) {
             for(int i = 0 ; i < numeros.length; i++){
                 for(int j = i + 1 ;j < numeros.length ; j++){
                     //cinparacion 
@@ -17,9 +17,10 @@ public class BubbleSort {
                 }
 
             }
-        }
+            
+        
     }
-    public void sortDscendente(int[] numeros) {
+    public void sortDscendente(int[] numeros){
 
         for(int i = 0 ; i < numeros.length; i++){
                 for(int j = i + 1 ;j < numeros.length ; j++){
@@ -51,6 +52,24 @@ public class BubbleSort {
         }else{
             sortDscendente(numeros);
         }
+
+    }
+    public void runBubbleSortAvz(int[] array){
+
+        for(int i = 0 ; i < array.length; i++){
+                for(int j = i + 1 ;j < array.length ; j++){
+                    //cinparacion 
+                    if(array[i] < array[j]){
+                        // si se cumple realizamos el intercambio 
+                        int aux = array[i];
+                        array[i] = array[j];
+                        array[j] = aux;
+
+                    }
+
+                }
+
+            }
 
     }
 }
