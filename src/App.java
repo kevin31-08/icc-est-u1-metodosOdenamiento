@@ -26,12 +26,12 @@ public class App {
     }
     public static void runBubbleSortAvz(){
         int[] array = new int[]{9,2,3,0,8,5};
-        
+        int[] numeraso ={9,2,3,0,8,5};
         //instanciar la clase 
         BubbleSortAvz bSortAvz = new BubbleSortAvz(array);
-        bSortAvz.printArray();
+        bSortAvz.printArray(numeraso);
         bSortAvz.sort(true);
-        bSortAvz.printArray();
+        bSortAvz.printArray(numeraso);
         
     }
     

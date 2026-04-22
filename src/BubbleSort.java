@@ -58,7 +58,7 @@ public class BubbleSort {
 
         for(int i = 0 ; i < array.length; i++){
                 for(int j = i + 1 ;j < array.length ; j++){
-                    //cinparacion 
+                    //comparacion 
                     if(array[i] < array[j]){
                         // si se cumple realizamos el intercambio 
                         int aux = array[i];
